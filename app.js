@@ -5,8 +5,10 @@ new Vue ({
         message: ""
     },
     methods: {
-        handleClick (){
-            this.toShow = false
+        handleClick () {
+            if (this.message === 'secret'){
+              this.toShow = false
+            }
         }
     }
 })
