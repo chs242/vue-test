@@ -10,10 +10,14 @@
 </head>
 <body>
     <div id="app">
-        <p> {{ test }} </p>
-
+        <h2>Enter "secret" to see the protected content</h2>
+        <div>
+            <input/>
+            <button v-if="true">Reveal</button>
+        
+            <p v-else>Here is the protected content : Li brx olnh wklv frxuvh, sohdvh ihho iuhh wr ohdyh d uhylhz :)</p>
+        </div>
     </div>
     <script src="app.js"></script>
-    
 </body>
 </html>
