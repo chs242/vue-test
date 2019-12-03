@@ -11,13 +11,13 @@
 <body>
     <div id="app">
         <h2>Enter "secret" to see the protected content</h2>
-        <div>
-            <input/>
-            <button v-if="true">Reveal</button>
-        
-            <p v-else>Here is the protected content : Li brx olnh wklv frxuvh, sohdvh ihho iuhh wr ohdyh d uhylhz :)</p>
+        <div v-if="toShow">
+            <input v-model="message"/>
+            <button @click="handleClick">Reveal</button>
         </div>
+        <p v-else>Here is the protected content : Li brx olnh wklv frxuvh, sohdvh ihho iuhh wr ohdyh d uhylhz :)</p>
     </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
